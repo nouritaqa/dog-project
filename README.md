@@ -2,8 +2,6 @@
 
 [image1]: ./images/sample_dog_output.png "Sample Output"
 [image2]: ./images/sample_human_output.png "Sample Output Human"
-[image3]: ./images/vgg16_model.png "VGG-16 Model Keras Layers"
-[image4]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
 
 ## Table of Contents
 
@@ -12,7 +10,6 @@
 3. [File Descriptions](#files)
 4. [Instructions](#instructions)
 5. [Results](#results)
-6. [Licensing, Authors, and Acknowledgements](#licensing)
 
 ## Project Overview <a name="overview"></a>
 
@@ -122,4 +119,6 @@ python -m ipykernel install --user --name dog-project --display-name "dog-projec
 ```
 jupyter notebook dog_app_submit.ipynb
 ```
-5. [Results](#results)
+
+## Results <a name="results"></a>
+The detailed descriptions for the project resutls, please refer to the [Report](dog_app_REPORT.docx).
