@@ -1,7 +1,7 @@
 [//]: # (Image References)
 
 [image1]: ./images/sample_dog_output.png "Sample Output"
-[image2]: ./images/sample_humnan_output.png "Sample Output Human"
+[image2]: ./images/sample_human_output.png "Sample Output Human"
 [image3]: ./images/vgg16_model.png "VGG-16 Model Keras Layers"
 [image4]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
 
@@ -11,8 +11,8 @@
 2. [Project Motivation](#motivation)
 3. [File Descriptions](#files)
 4. [Instructions](#instructions)
-4. [Results](#results)
-5. [Licensing, Authors, and Acknowledgements](#licensing)
+5. [Results](#results)
+6. [Licensing, Authors, and Acknowledgements](#licensing)
 
 ## Project Overview <a name="overview"></a>
 
@@ -122,3 +122,4 @@ python -m ipykernel install --user --name dog-project --display-name "dog-projec
 ```
 jupyter notebook dog_app_submit.ipynb
 ```
+5. [Results](#results)
