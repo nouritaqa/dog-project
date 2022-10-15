@@ -10,10 +10,11 @@
 1. [Project Overview](#overview)
 2. [Project Motivation](#motivation)
 3. [File Descriptions](#files)
+4. [Instructions](#instructions)
 4. [Results](#results)
 5. [Licensing, Authors, and Acknowledgements](#licensing)
 
-### Project Overview <a name="overview"></a>
+## Project Overview <a name="overview"></a>
 
 For people, it is a not difficult task or rather trivial to see and understand the images in front of them. Computer Vision (CV) is a multi-disciplinary field that focuses on enabling computers to do so from digital images, videos and other visual input. A human can easily tell if it is either a dog or a human face, and even recognize a face/breed that they have only seen once before. How can we render the same or even more capabilities to computers?
 
@@ -24,11 +25,22 @@ Taking advantage of such progress, this project aims at constructing a deep lear
 ![Sample Output][image1]
 ![Sample Output Human][image2]
 
-Along with exploring state-of-the-art CNN models for classification, you will make important design decisions about the user experience for your app.  Our goal is that by completing this lab, you understand the challenges involved in piecing together a series of models designed to perform various tasks in a data processing pipeline.  Each model has its strengths and weaknesses, and engineering a real-world application often involves solving many problems without a perfect answer.  Your imperfect solution will nonetheless create a fun user experience!
+## Project Motivation<a name="motivation"></a>
+The objective of this project is to develop an algorithm that can take an image as input and return the prediction of the dog’s breed. If a human image is detected, it will provide an estimate of the dog breed (this will be fun to know your dog cousin!). Therefore, the tasks to address this problem are as follows:
 
-## Project Instructions
+1.	Develop Human-face detector
+2.	Develop Dog detector
+3.	Create a CNN to classify dog breeds
+4.	Develop and test an algorithm for the whole process
 
-### Instructions
+For the development of CNN to classify dog breeds, transfer learning will be utilized based on the pre-computed bottleneck features.
+
+## File Descriptions <a name="files"></a>
+Jupyter Notebook [dog_app_submit.ipynb](dog_app_submit.ipynb) contains all the codes for the above task. Markdown cells were used to describe the questions and findings of the data analysis.
+
+There is also a word document [Report](dog_app_REPORT.docx) that discuss this project in detail and serves as the manuscript for the blog article.
+
+## Instructions <a name="instructions"></a>
 
 1. Clone the repository and navigate to the downloaded folder.
 ```
@@ -108,27 +120,5 @@ python -m ipykernel install --user --name dog-project --display-name "dog-projec
 
 11. Open the notebook.
 ```
-jupyter notebook dog_app.ipynb
+jupyter notebook dog_app_submit.ipynb
 ```
-
-12. (Optional) **If you are running the project on your local machine (and not using AWS)**, before running code, change the kernel to match the dog-project environment by using the drop-down menu (**Kernel > Change kernel > dog-project**). Then, follow the instructions in the notebook.
-
-__NOTE:__ While some code has already been implemented to get you started, you will need to implement additional functionality to successfully answer all of the questions included in the notebook. __Unless requested, do not modify code that has already been included.__
-
-## Evaluation
-
-Your project will be reviewed by a Udacity reviewer against the CNN project [rubric](https://review.udacity.com/#!/rubrics/810/view).  Review this rubric thoroughly, and self-evaluate your project before submission.  All criteria found in the rubric must meet specifications for you to pass.
-
-## Project Submission
-
-When you are ready to submit your project, collect the following files and compress them into a single archive for upload:
-- The `dog_app.ipynb` file with fully functional code, all code cells executed and displaying output, and all questions answered.
-- An HTML or PDF export of the project notebook with the name `report.html` or `report.pdf`.
-- Any additional images used for the project that were not supplied to you for the project. __Please do not include the project data sets in the `dogImages/` or `lfw/` folders.  Likewise, please do not include the `bottleneck_features/` folder.__
-
-Alternatively, your submission could consist of the GitHub link to your repository.
-
- # Archival Note
- This repository is deprecated; therefore, we are going to archive it. However, learners will be able to fork it to their personal Github account but cannot submit PRs to this repository. If you have any issues or suggestions to make, feel free to:
-- Utilize the https://knowledge.udacity.com/ forum to seek help on content-specific issues.
-- Submit a support ticket along with the link to your forked repository if (learners are) blocked for other reasons. Here are the links for the [retail consumers](https://udacity.zendesk.com/hc/en-us/requests/new) and [enterprise learners](https://udacityenterprise.zendesk.com/hc/en-us/requests/new?ticket_form_id=360000279131).
